@@ -10,7 +10,74 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <style>
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
     </style>
     <style>
       html {
@@ -20,14 +87,13 @@
 
       body {
         font-weight: 400;
-        font-style:normal;
+        font-style: normal;
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.15;
         color: var(--dl-color-scheme-green100);
         background-color: var(--dl-color-scheme-yellow20);
-
       }
     </style>
     <link
@@ -50,15 +116,21 @@
             <div class="book-online-logo">
               <img
                 alt="image"
-                src="ca105488-145c-44f7-97a7-e9efa032dbcd"
+                src="public/playground_assets/7d6ddd1f-0e57-44f0-baa8-0ce53b6fbd3e-200h.png"
                 class="book-online-image"
               />
             </div>
             <div class="book-online-links">
-              <a href="/" class="book-online-home">Home</a>
-              <a href="/" class="book-online-ourservicestext">Our Services</a>
-              <a href="/" class="book-online-careerstext">Careers</a>
-              <a href="/" class="book-online-reviewstext">Reviews</a>
+              <a href="home.html" class="book-online-home">Home</a>
+              <a
+                href="home.html#ourservices"
+                class="book-online-ourservicestext"
+                >Our Services</a
+              >
+              <a href="home.html#careers" class="book-online-careerstext"
+                >Careers</a
+              >
+              <a href="home.html#reviews" class="book-online-reviewstext">Reviews</a>
               <a
                 href="tel:9165328179"
                 class="book-online-link button button-primary content"
@@ -75,18 +147,87 @@
             </div>
           </div>
         </div>
+
         <div id="bookonlineform" class="book-online-form">
-          <h1 class="book-online-text">Header</h1>
-          <span class="book-online-text01">
-            <span>
-              <span>
-                Lo. Mauris luctus rutrum mi ut rhoncus. Integer in dignissim
-                tortor.
-              </span>
-              <span></span>
-            </span>
-          </span>
+          <h3 class="book-online-text">Book our service online!</h1>
+            <br>
+          <div id="jobapplicationform" class="job-application-form">
+            <form
+              action="mailto:qualifiedrepair@gmail.com"
+              id="ft-form"
+              method="POST"
+              accept-charset="UTF-8"
+              enctype="multipart/form-data"
+            >
+              <fieldset>
+                <legend>Service</legend>
+                <label>
+                  Application for *
+                  <select name="Type of service:" required>
+                    <option>AC/Heating repair</option>
+                    <option>Refridgerator</option>
+                    <option>Dishwasher</option>
+                    <option>Oven/Stove Repair</option>
+                  </select>
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Personal data</legend>
+                <div class="two-cols">
+                  <label>
+                    First name *
+                    <input type="text" name="First name" required />
+                  </label>
+                  <label>
+                    Last name *
+                    <input type="text" name="Family name" required />
+                  </label>
+                </div>
+                <label>
+                  Address *
+                  <input type="text" name="Address"  required/>
+                </label>
+                <div class="two-cols">
+                  <label>
+                    ZIP Code
+                    <input type="text" name="ZIP" />
+                  </label>
+                  <label>
+                    City
+                    <input type="text" name="City" />
+                  </label>
+                </div>
+                <div class="two-cols">
+                  <label>
+                    Phone *
+                    <input type="tel" name="Phone" required />
+                  </label>
+                  <label>
+                    Email address
+                    <input type="email" name="Email" />
+                  </label>
+                </div>
+                <div class="two-cols">
+                  <label>
+                    Description of issue
+                    <textarea name="description" rows="4" cols="50" placeholder="Please provide a brief description of your issue"> </textarea>
+                  </label>
+                </div>
+              </fieldset>
+            
+              <div class="btns">
+                <input
+                  type="text"
+                  name="_gotcha"
+                  value=""
+                  style="display: none"
+                />
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
         </div>
+
         <footer class="book-online-footer">
           <div class="book-online-links-container">
             <div class="book-online-container1">
@@ -145,45 +286,51 @@
     <script>
       window.onload = () => {
         const runAllScripts = () => {
-          initializeAllAccordions()
-        }
+          initializeAllAccordions();
+        };
 
         const listenForUrlChanges = () => {
-          let url = location.href
+          let url = location.href;
           document.body.addEventListener(
-            'click',
+            "click",
             () => {
               requestAnimationFrame(() => {
                 if (url !== location.href) {
-                  runAllScripts()
-                  url = location.href
+                  runAllScripts();
+                  url = location.href;
                 }
-              })
+              });
             },
             true
-          )
-        }
+          );
+        };
 
         const initializeAllAccordions = () => {
-          const allAccordions = document.querySelectorAll('[data-role="Accordion"]');
+          const allAccordions = document.querySelectorAll(
+            '[data-role="Accordion"]'
+          );
 
           allAccordions.forEach((accordion) => {
-            const accordionHeader = accordion.querySelector('[data-type="accordion-header"]')
-            const accordionContent = accordion.querySelector('[data-type="accordion-content"]')
+            const accordionHeader = accordion.querySelector(
+              '[data-type="accordion-header"]'
+            );
+            const accordionContent = accordion.querySelector(
+              '[data-type="accordion-content"]'
+            );
 
-            accordionHeader.addEventListener('click', () => {
+            accordionHeader.addEventListener("click", () => {
               if (accordionContent.style.maxHeight) {
-                accordionContent.style.maxHeight = ''
+                accordionContent.style.maxHeight = "";
               } else {
-                accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`
+                accordionContent.style.maxHeight = `${accordionContent.scrollHeight}px`;
               }
-            })
-          })
-        }
+            });
+          });
+        };
 
-        listenForUrlChanges()
-        runAllScripts()
-      }
+        listenForUrlChanges();
+        runAllScripts();
+      };
     </script>
   </body>
 </html>

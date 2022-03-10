@@ -49,17 +49,17 @@
             <div class="job-application-logo">
               <img
                 alt="image"
-                src="ca105488-145c-44f7-97a7-e9efa032dbcd"
+                src="public/playground_assets/7d6ddd1f-0e57-44f0-baa8-0ce53b6fbd3e-200h.png"
                 class="job-application-image"
               />
             </div>
             <div class="job-application-links">
-              <a href="/" class="job-application-home">Home</a>
-              <a href="/" class="job-application-ourservicestext">
+              <a href="home.html" class="job-application-home">Home</a>
+              <a href="home.html#ourservices" class="job-application-ourservicestext">
                 Our Services
               </a>
-              <a href="/" class="job-application-careerstext">Careers</a>
-              <a href="/" class="job-application-reviewstext">Reviews</a>
+              <a href="home.html#careers" class="job-application-careerstext">Careers</a>
+              <a href="home.html" class="job-application-reviewstext">Reviews</a>
               <a
                 href="tel:9165328179"
                 class="job-application-link button button-primary content"
@@ -76,18 +76,88 @@
             </div>
           </div>
         </div>
+
         <div id="jobapplicationform" class="job-application-form">
-          <h1 class="job-application-text">Header</h1>
-          <span class="job-application-text01">
-            <span>
-              <span>
-                Lo. Mauris luctus rutrum mi ut rhoncus. Integer in dignissim
-                tortor.
-              </span>
-              <span></span>
-            </span>
-          </span>
+          <form action="mailto:qualifiedrepair@gmail.com" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Job</legend>
+              <label>
+                Application for *
+                <select name="Application for" required>
+                  <option>Technician</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Personal data</legend>
+              <div class="two-cols">
+                <label>
+                  First name *
+                  <input type="text" name="First name" required>
+                </label>
+                <label>
+                  Last name *
+                  <input type="text" name="Family name" required>
+                </label>
+              </div>
+              <div class="two-cols">
+                <label>
+                  Citizenship
+                  <input type="text" name="Citizenship">
+                </label>
+                <label>
+                  Date of birth
+                  <input type="date" name="Date of birth">
+                </label>
+              </div>
+              <label>
+                Address
+                <input type="text" name="Address">
+              </label>
+              <div class="two-cols">
+                <label>
+                  ZIP Code
+                  <input type="text" name="ZIP">
+                </label>
+                <label>
+                  City
+                  <input type="text" name="City">
+                </label>
+              </div>
+              <div class="two-cols">
+                <label>
+                  Phone *
+                  <input type="tel" name="Phone" required>
+                </label>
+                <label>
+                  Email address *
+                  <input type="email" name="Email" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Application documents</legend>
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+              <div class="two-cols">
+                <label>
+                  Application letter
+                  <input type="file" name="Application letter" accept=".doc,.docx,.pdf">
+                </label>
+                <label>
+                  Resume
+                  <input type="file" name="Curriculum vitae" accept=".doc,.docx,.pdf">
+                </label>
+              </div>
+              <p>Possible file types: DOC, PDF. Maximum file size: 10 MB.</p>
+            </fieldset>
+            <div class="btns">
+              <input type="text" name="_gotcha" value="" style="display:none;">
+              <input type="submit" value="Submit application">
+            </div>
+          </form>
         </div>
+
+
         <footer class="job-application-footer">
           <div class="job-application-links-container">
             <div class="job-application-container1">
