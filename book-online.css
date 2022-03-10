@@ -1,0 +1,293 @@
+.book-online-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.book-online-navbar {
+  height: 119px;
+}
+.book-online-max-width {
+  height: 77px;
+  align-self: flex-end;
+  background-color: #ffffff;
+}
+.book-online-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.book-online-image {
+  width: 415px;
+  height: 141px;
+  transform: scale(0.8);
+  object-fit: cover;
+  margin-right: auto;
+  object-position: center;
+}
+.book-online-links {
+  flex: 1;
+  width: 745px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  justify-content: flex-end;
+}
+.book-online-home {
+  color: var(--dl-color-scheme-green80);
+  font-size: 20px;
+  font-style: normal;
+  font-family: Titillium Web;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: 7px;
+  text-transform: none;
+  text-decoration: none;
+}
+.book-online-ourservicestext {
+  color: var(--dl-color-scheme-green80);
+  font-size: 20;
+  font-style: normal;
+  font-family: Titillium Web;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: 7px;
+  text-transform: none;
+  text-decoration: none;
+}
+.book-online-careerstext {
+  color: var(--dl-color-scheme-green80);
+  font-size: 20px;
+  font-style: normal;
+  font-family: Titillium Web;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: 7px;
+  text-transform: none;
+  text-decoration: none;
+}
+.book-online-reviewstext {
+  color: var(--dl-color-scheme-green80);
+  font-size: 20px;
+  font-style: normal;
+  font-family: Titillium Web;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-right: var(--dl-space-space-twounits);
+  margin-bottom: 7px;
+  text-transform: none;
+  list-style-type: disc;
+  text-decoration: none;
+  list-style-image: none;
+  list-style-position: outside;
+}
+.book-online-link {
+  height: 45px;
+  display: flex;
+  font-size: 20px;
+  align-self: auto;
+  text-align: center;
+  transition: 0.3s;
+  padding-top: 9px;
+  border-color: #154b87;
+  text-decoration: none;
+  background-color: #154b87;
+}
+.book-online-link:hover {
+  color: #021616;
+  background-color: #c4d6ea;
+}
+.book-online-burger-menu {
+  fill: #105749;
+  width: 24px;
+  height: 24px;
+}
+.book-online-form {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.book-online-text {
+  font-size: 3rem;
+  align-self: flex-start;
+  text-align: center;
+}
+.book-online-text01 {
+  max-width: var(--dl-size-size-maxwidth);
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.book-online-footer {
+  width: 100%;
+  height: 382px;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+}
+.book-online-links-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.book-online-container1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.book-online-text05 {
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.book-online-text06 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-text09 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-text10 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-container3 {
+  width: 96px;
+}
+.book-online-text11 {
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.book-online-text12 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-text13 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-text14 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-text15 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.book-online-container4 {
+  width: 647px;
+}
+.book-online-text17 {
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-oneandhalfunits);
+}
+.book-online-text18 {
+  margin-bottom: var(--dl-space-space-unit);
+}
+@media(max-width: 991px) {
+  .book-online-footer {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .book-online-links-container {
+    width: auto;
+    margin-top: var(--dl-space-space-twounits);
+    flex-direction: row;
+  }
+  .book-online-container1 {
+    height: fit-content;
+    flex-wrap: wrap;
+    margin-right: 0px;
+  }
+  .book-online-container4 {
+    height: fit-content;
+  }
+}
+@media(max-width: 767px) {
+  .book-online-links {
+    display: none;
+  }
+  .book-online-icon {
+    fill: var(--dl-color-scheme-green100);
+  }
+  .book-online-form {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .book-online-text01 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .book-online-footer {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .book-online-links-container {
+    width: auto;
+    margin-top: var(--dl-space-space-twounits);
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .book-online-container1 {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .book-online-container4 {
+    height: fit-content;
+  }
+}
+@media(max-width: 479px) {
+  .book-online-navbar {
+    height: fit-content;
+    max-height: 20%;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-bottom: var(--dl-space-space-halfunit);
+  }
+  .book-online-image {
+    width: 354px;
+    height: var(--dl-size-size-medium);
+    transform: scale(0.8);
+    align-self: stretch;
+    object-fit: scale-down;
+  }
+  .book-online-icon {
+    transform: scale(2);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .book-online-form {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .book-online-footer {
+    padding: var(--dl-space-space-unit);
+  }
+  .book-online-links-container {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .book-online-container1 {
+    align-items: center;
+    margin-right: 0px;
+    justify-content: space-between;
+  }
+  .book-online-container4 {
+    height: fit-content;
+  }
+}
